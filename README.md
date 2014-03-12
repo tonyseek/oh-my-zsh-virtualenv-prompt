@@ -7,7 +7,15 @@ the virtualenv prompt in oh-my-zsh themes.
 Installation
 ------------
 
-You can install this plugin from shell:
+You can install this plugin quickly via `curl`:
+
+    curl -L https://raw.github.com/tonyseek/oh-my-zsh-virtualenv-prompt/master/install.sh | sh
+
+Or via `wget`:
+
+    wget https://raw.github.com/tonyseek/oh-my-zsh-virtualenv-prompt/master/install.sh -O - | sh
+
+Or you can install from shell by yourself also:
 
     repo="git://github.com/tonyseek/oh-my-zsh-virtualenv-prompt.git"
     target="$HOME/.oh-my-zsh/plugins/virtualenv-prompt"
