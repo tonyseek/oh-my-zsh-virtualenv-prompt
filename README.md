@@ -7,21 +7,17 @@ the virtualenv prompt in oh-my-zsh themes.
 Installation
 ------------
 
-You can install this plugin quickly via `curl`:
+You can install this plugin via [antigen](https://github.com/zsh-users/antigen):
 
-    curl -L https://raw.github.com/tonyseek/oh-my-zsh-virtualenv-prompt/master/install.sh | sh
+    # $HOME/.zshrc
+    source /usr/local/share/antigen.zsh
 
-Or via `wget`:
+    antigen use oh-my-zsh
+    antigen bundle tonyseek/oh-my-zsh-virtualenv-prompt
+    antigen theme tonyseek/oh-my-zsh-seeker-theme seeker  # optional
+    antigen apply
 
-    wget https://raw.github.com/tonyseek/oh-my-zsh-virtualenv-prompt/master/install.sh -O - | sh
-
-Or you can install from shell by yourself also:
-
-    repo="git://github.com/tonyseek/oh-my-zsh-virtualenv-prompt.git"
-    target="$HOME/.oh-my-zsh/plugins/virtualenv-prompt"
-
-    git clone $repo $target
-
+It could be upgraded by `antigen update` command.
 
 Customize Theme
 ---------------
